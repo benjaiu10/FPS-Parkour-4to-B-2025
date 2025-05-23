@@ -70,7 +70,12 @@ PrefabInstance:
     - target: {fileID: 2708749163778684148, guid: c56d673d490fb4646ba092cce392d39d,
         type: 3}
       propertyPath: m_Name
-      value: Plat_10x10 (2)
+      value: Plat_4x10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6039690884491289463, guid: c56d673d490fb4646ba092cce392d39d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c56d673d490fb4646ba092cce392d39d, type: 3}
