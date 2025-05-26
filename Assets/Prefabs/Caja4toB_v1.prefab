@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7957149137581504243}
   - component: {fileID: 7957149136342961718}
   - component: {fileID: 7957149136342961717}
+  - component: {fileID: 4897576993538634408}
   m_Layer: 0
   m_Name: Caja4toB_v1
   m_TagString: Untagged
@@ -108,3 +109,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4897576993538634408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7957149137583695923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 029487293e5f9ad40ae0ac188a638f8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
