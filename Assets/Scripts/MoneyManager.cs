@@ -18,7 +18,7 @@ public class MoneyManager : MonoBehaviour
         {
             //impedir la compra
             Debug.Log("Dinero");
-            return false
+            return false;
         }
         else
         {
