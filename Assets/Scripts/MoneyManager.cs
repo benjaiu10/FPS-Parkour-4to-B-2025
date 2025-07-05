@@ -17,7 +17,7 @@ public class MoneyManager : MonoBehaviour
         if (money + amount < 0)
         {
             //impedir la compra
-            Debug.Log("Dinero");
+            Debug.Log("Dinero insuficiente");
             return false;
         }
         else
