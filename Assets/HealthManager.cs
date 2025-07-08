@@ -1,26 +1,31 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthManager : MonoBehaviour
 {
-    public int healthPoints;
+    public float HP;
     public UIManager uiManager;
+
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         uiManager = FindObjectOfType<UIManager>();
     }
 
-    public bool HealthUpdate(int damageAmount)
+    public bool UpdateHealthText(float damage)
     {
-        if (healthPoints <= damageAmount)
+        if (HP <= damage)
         {
-            Debug.Log("Game Over");
-            return false; // Game Over
+            SceneManager.LoadScene("Parkour");
+            return false;
         }
-        healthPoints -= damageAmount;
-        uiManager.UpdateHealthText(healthPoints.ToString());
-        return true; // Sigue vivo
+        else
+        {
+            HP -= damage;
+            uiManager.UpdateHealthText(HP.ToString());
+            return true;
+        }
     }
 }

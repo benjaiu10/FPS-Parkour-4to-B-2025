@@ -4,19 +4,20 @@ using UnityEngine;
 
 public class EnemyObject : MonoBehaviour
 {
-    public float cost = 5;
-    public HealthManager healthManager;
+    public HealthManager HealthManager;
+    public float Damage;
 
-    void Start()
+    // Start is called before the first frame update
+    private void Start()
     {
-        healthManager = FindObjectOfType<HealthManager>();
+        HealthManager = FindObjectOfType<HealthManager>();
     }
 
-    void OnCollisionEnter(Collision collision)
-    { 
+    private void OnCollisionEnter(Collision collision)
+    {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (healthManager.HealthUpdate((int)cost))
+            if (HealthManager.UpdateHealthText(Damage))
             {
                 Destroy(gameObject);
             }
